@@ -10,12 +10,57 @@
 <body>
 
         
-        <div class="contenedor-fondo">
-            <div class="cuadrado-negro"></div>
-            <div class="contenedor-general-formulario">
+        <div class="fondo__contenedor">
+            <div class="cuadrado-negro__contenedor"></div>
+                <form class="general-formulario__contenedor">
                 
-                <div class="titulo-formulario">Formulario de contacto</div>    
-            </div>
+                    <div class="titulo__formulario">Formulario de contacto</div>
+                    <div class="subtitulo__formulario">Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</div>
+
+                    <div class="formulario__titulos-celdas">Nombre</div>
+                    <div class="input__contenedor">
+                        <input class="formulario__inputs-texto" type="text" name="Nombre" value="Introduce tu nombre">
+                    </div>
+
+                    <div class="formulario__titulos-celdas">Email</div>
+                    <div class="input__contenedor">
+                        <input class="formulario__inputs-texto" type="text" name="Email" value="Introduce tu Email">
+                    </div>
+
+                    <div class="formulario__titulos-celdas">Edad</div>
+                    <div class="input__contenedor">
+                        <input class="formulario__inputs-texto" type="text" name="Edad" value="Introduce tu edad, debes ser mayor de edad">
+                    </div>
+
+                    <div class="formulario__titulos-celdas">Edad</div>
+                    <div class="input__contenedor">
+                        <input class="formulario__inputs-texto" type="text" name="Rol" value="¿Qué rol describe mejor tu situación actual?">
+                    </div>
+
+                    <div class="formulario__titulos-celdas">¿Qué rol describe mejor tu situación actual?</div>
+                    <div class="input__contenedor">
+                        <select class="formulario__inputs-texto" id="rol" name="Rol" value="¿Qué rol describe mejor tu situación actual?">
+                            <option value="" selected="selected">Selecciona tu rol actual</option>
+                            <option value="estudiante">Estudiante</option>
+                            <option value="Trabajo a tiempo completo">Trabajo a tiempo completo</option>
+                            <option value="Freelance">Freelance</option>
+                            <option value="Buscnado trabajo">Buscando trabajo</option>
+                    
+                        </select>
+                    </div>
+
+                    <div class="formulario__titulos-celdas">¿Recomendarías esta página a un desconocido?</div>
+                    <div class="input__contenedor">
+                        <label>Definitivamente Si<input type="radio" name="curso" value="ceramica" checked></label>
+                        <label>Quizás<input type="radio" name="curso" value="jardineria" ></label>
+                        <label>No estoy seguro<input type="radio" name="curso" value="pintura"></label>
+                    </div>
+    
+
+
+
+
+                </form>
 
         </div>
 
