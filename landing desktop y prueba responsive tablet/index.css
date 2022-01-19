@@ -1,0 +1,422 @@
+* {
+    list-style: none;
+}
+
+
+body {
+    margin: 0px;
+}
+
+nav img{
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display: flex;
+}
+
+
+.checkbtn {
+    display: none;
+    cursor: pointer;
+}
+
+#check{
+    display: none;
+}
+
+/*PAGES*/
+
+.pages li{
+    padding: 10px;
+    list-style: none;
+    transition: 0.25s;
+    padding: 30px 10px;
+}
+
+.pages li:hover{
+    cursor: pointer;
+    background-color: black;
+    text-decoration: underline;
+    color: white;
+}
+
+
+/* MEDIA ICONS*/
+
+.media {
+    display: flex;
+    align-items: center;
+}
+
+.media div{
+    padding: 10px;
+    margin: 3px;
+        
+}
+
+.media i{
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    
+      
+}
+
+.twitter {
+    background-color: rgb(0, 185, 247);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.facebook {
+    background-color: blue;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+
+.instagram {
+    background-color: pink;
+    border-radius: 50%;
+    display: flex;
+    width: 10px;
+    height: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.yt{
+    background-color: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*BANNER1*/
+
+.banner {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.banner video {
+    width: 100%;
+    display: flex;
+    
+}
+
+.banner-text {
+    position: absolute;
+    text-align: center;
+}
+
+.banner-text p {
+    font-size: 50px;
+    font-weight: bold;
+}
+ 
+[data-bakground-image] {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    
+  }
+  
+  [data-bakground-image="HTML-CSS"] {
+    background-image: url(../src/html5css3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #background-video {
+    width: 100%;
+    opacity: 0.8;
+  }
+  .text-over-video {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  
+  .text-white {
+    color: white;
+  }
+  .uppercase {
+    text-transform: uppercase;
+    padding-bottom: 5px;
+  }
+  .font-size-30px {
+    font-size: 30px;
+  }
+  .font-size-20px {
+    font-size: 20px;
+  }
+  .font-size-10px {
+    font-size: 10px;
+  }
+  .font-size-40px {
+    font-size: 40px;
+  }
+  .margin-top-10px {
+    margin-top: 10px;
+  }
+  .margin-top-20px {
+    margin-top: 20px;
+  }
+  .margin-rigth-10px {
+    margin-right: 10px;
+  }
+  .padding-20px {
+    padding: 20px;
+  }
+  .padding-bottom-20px {
+    padding-bottom: 20px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  
+  .text-shadow {
+    text-shadow: 6px 6px 3px rgba(150, 150, 150, 1);
+  }
+  .column-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .row-view-wrap{
+      display: flex;
+  }
+
+  .box2 {
+    background-color:white;
+    width: 350px;   
+   
+    border-radius: 10px;
+    margin-right: 50px;
+    }
+
+.box1 {
+    background-color:white;
+    width: 350px;   
+  
+    border-radius: 10px;
+    margin-left:-250px;
+    margin-right: 50px;
+
+}
+
+.title-pack{
+  font-size: 20px; 
+  margin-top: 10px;
+  padding-top:50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b1a4b0;
+}
+
+.started {
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.started p:hover{
+  box-shadow: none;
+  transform: scale(1.08);
+  transition: 0.3s linear;
+}
+
+.started p{
+  -webkit-box-shadow: inset -1px -10px 15px -5px #000000; 
+  box-shadow: inset -1px -10px 15px -5px #000000; 
+}
+
+  .packs {
+      display: flex;
+     align-items: center;
+     margin-left: 20%;
+  }
+
+  .offer{
+      display: flex;
+      flex-wrap: nowrap;
+
+  }
+
+ 
+  .offer ul li{
+      display: flex;
+      align-items: center;
+  }
+  
+  .wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  [data-places-cards] {
+    margin-top: 10px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    opacity: 0.9;
+  }
+  
+  [data-places-cards="mountain"] {
+    background-image: url(./img/mountain.jpg);
+  }
+  [data-places-cards="lake"] {
+    background-image: url(./img/lake.jpg);
+  }
+  [data-places-cards="ocean"] {
+    background-image: url(./img/ocean.jpg);
+  }
+  .pricing {
+    background-color: #f0f4f7;
+  }
+  .color-text-1 {
+    color: #6e768d;
+  }
+  
+ 
+  
+  .background-color-white {
+    background-color: #ffffff;
+  }
+  
+  .cards-pricing {
+    width: 50vh;
+  }
+  .plans {
+    font-size: 20px;
+    color: #b4bdc6 ;
+    margin-bottom: 60px;
+    margin-top: -20px;
+    
+  }
+
+
+  footer {
+    background-color: #1b1c20;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    padding: 5px;
+  }
+  .color-check {
+    color: #74ce6a;
+  }
+  .button {
+    background-color: #71ce73;
+    border-radius: 5px;
+    box-shadow: rgba(126, 126, 126, 0.35) 0px 5px 10px;
+  }
+  
+  .pop {
+    background-color: #22b6d6;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    color: white;
+    position: relative;
+    left: 75%;
+    bottom: 26px;
+    
+    
+  }
+
+  .pop p{
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  
+
+
+
+@media (max-width:1024px){
+    .checkbtn {
+        display: block;
+    }
+    nav {
+        padding: 10px;
+        background-color: white;
+    }
+    
+    nav ul {
+        position:absolute;
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        left: -100%;
+        height: 100vh;
+        transition: 0.5s;
+        width: 100%;
+        margin-left: -40px;
+        z-index: 1;
+        
+       }
+    nav ul li {
+        background-color: white;
+    
+    }
+    
+    .pages li {
+        padding: 15px;
+        margin: 0px;
+    }
+    
+    
+    
+    
+    #check:checked ~ ul {
+        left: 0;
+    }
+    
+    
+    
+       
+       
+    
+    
+    
+}
+
