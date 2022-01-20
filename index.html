@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <div class="row-view">
+      <div class="header__row-view">
         <div data-bakground-image="HTML-CSS"></div>
         <div>
           <i class="fas fa-bars"></i>
@@ -32,7 +32,7 @@
       </div>
     </header>
     <main>
-      <div>
+      <div class="banner">
         <div class="row-view">
           <video id="background-video" autoplay loop muted>
             <source
@@ -40,14 +40,14 @@
               type="video/mp4"
             />
           </video>
-          <div class="text-over-video">
-            <p class="width-75 text-white uppercase bold">
-              bienvenido a la practica de html y css
-            </p>
-            <p class="text-white font-size-30px bold">Vamos a crear</p>
-            <p class="text-white font-size-30px bold">Una web responsive</p>
-            <p class="text-white font-size-30px bold">y animada.</p>
-          </div>
+          <p class=" banner__text-over-video width-75 text-white uppercase bold">
+            bienvenido a la practica de html y css
+          </p>
+          <div class="banner__text-over-video">
+            <p class="banner__text-over-video text-white font-size-30px bold ">Vamos a crear</p>
+            <p class="banner__text-over-video text-white font-size-30px bold ">Una web responsive</p>
+            <p class="banner__text-over-video text-white font-size-30px bold margin-top-40px">y animada.</p></div>
+          
         </div>
       </div>
       <div class="column-view">
@@ -86,17 +86,17 @@
             class="cards-pricing column-view background-color-white margin-top-20px padding-bottom-20px"
           >
             <div>
-              <p class="font-size-20px margin-top-10px padding-20px">
+              <p class="font-size-20px margin-top-10px padding-5px bold">
                 Bronze Packege
               </p>
-              <hr />
+              <hr class="cards-pricing-underline"/>
             </div>
             <div>
-              <p class="font-size-30px padding-20px">$10Month</p>
-              <hr />
+              <p class="font-size-30px padding-5px">$10Month</p>
+              <hr class="cards-pricing-underline"/>
             </div>
             <div>
-              <div class="column-view padding-20px">
+              <div class="column-view padding-5px">
                 <div class="row-view margin-top-10px">
                   <i
                     class="fas fa-check-circle margin-rigth-10px color-check"
@@ -117,7 +117,7 @@
                   <p>Approve Reviews</p>
                 </div>
               </div>
-              <hr />
+              <hr class="cards-pricing-underline"/>
             </div>
             <div>
               <p class="padding-20px margin-top-20px text-white button">
@@ -125,7 +125,110 @@
               </p>
             </div>
           </div>
-         
+
+          <div
+          class="cards-pricing column-view background-color-white margin-top-20px padding-bottom-20px"
+        >
+          <div>
+            <p class="font-size-20px margin-top-10px padding-5px bold">
+              Gold Packege
+            </p>
+            <hr class="cards-pricing-underline"/>
+          </div>
+          <div>
+            <p class="font-size-30px padding-5px">$19Month</p>
+            <hr class="cards-pricing-underline"/>
+          </div>
+          <div>
+            <div class="column-view padding-5px">
+              <div class="row-view margin-top-10px">
+                <i
+                  class="fas fa-check-circle margin-rigth-10px color-check"
+                ></i>
+                <p>Unlimited Listing</p>
+              </div>
+              <div class="row-view margin-top-10px">
+                <i
+                  class="fas fa-check-circle margin-rigth-10px color-check"
+                ></i>
+                <p>Edit Your Listing</p>
+              </div>
+              <div class="row-view margin-top-10px">
+                <i
+                  class="fas fa-check-circle margin-rigth-10px color-check"
+                  
+                ></i>
+                <p>Approve Reviews</p>
+              </div>
+              <div class="row-view margin-top-10px">
+                <i
+                  class="fas fa-check-circle margin-rigth-10px color-check"
+                  
+                ></i>
+                <p>Take Booking Online</p>
+              </div>
+              <div class="row-view margin-top-10px">
+                <i
+                  class="fas fa-check-circle margin-rigth-10px color-check"
+                  
+                ></i>
+                <p>24/7 Support Service</p>
+              </div>
+            </div>
+            <hr class="cards-pricing-underline"/>
+          </div>
+          <div>
+            <p class="padding-20px margin-top-20px text-white button">
+              Get Started Now
+            </p>
+          </div>
+        </div>
+        
+        <div
+            class="cards-pricing column-view background-color-white margin-top-20px padding-bottom-20px"
+          >
+            <div>
+              <p class="font-size-20px margin-top-10px padding-5px bold">
+                Platinum Packege
+              </p>
+              <hr class="cards-pricing-underline" />
+            </div>
+            <div>
+              <p class="font-size-30px padding-5px">$49Month</p>
+              <hr class="cards-pricing-underline"/>
+            </div>
+            <div>
+              <div class="column-view padding-5px">
+                <div class="row-view margin-top-10px">
+                  <i
+                    class="fas fa-check-circle margin-rigth-10px color-check"
+                  ></i>
+                  <p>Unlimited Listing</p>
+                </div>
+                <div class="row-view margin-top-10px">
+                  <i
+                    class="fas fa-check-circle margin-rigth-10px color-check"
+                  ></i>
+                  <p>Edit Your Listing</p>
+                </div>
+                <div class="row-view margin-top-10px">
+                  <i
+                    class="fas fa-check-circle margin-rigth-10px color-check"
+                    
+                  ></i>
+                  <p>Approve Reviews</p>
+                </div>
+              </div>
+              <hr class="cards-pricing-underline"/>
+            </div>
+            <div>
+              <p class="padding-20px margin-top-20px text-white button">
+                Get Started Now
+              </p>
+            </div>
+          </div>
+
+
         </div>
         
     </main>

@@ -11,9 +11,22 @@ header {
   padding: 20px;
 }
 
-.row-view {
+.header__row-view{
   display: flex;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.row-view {
+  display: flex;
+  justify-content: center;
   align-content: center;
   align-items: center;
 }
@@ -37,14 +50,15 @@ header {
   width: 100%;
   opacity: 0.8;
 }
-.text-over-video {
+.banner__text-over-video {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-left: 25%;
+  
 }
+
 
 .text-white {
   color: white;
@@ -71,11 +85,17 @@ header {
 .margin-top-20px {
   margin-top: 20px;
 }
+.margin-top-40px {
+  margin-top: 40px;
+}
 .margin-rigth-10px {
   margin-right: 10px;
 }
 .padding-20px {
   padding: 20px;
+}
+.padding-5px {
+  padding: 5px;
 }
 .padding-bottom-20px {
   padding-bottom: 20px;
@@ -123,6 +143,9 @@ header {
 }
 .pricing {
   background-color: #f0f4f7;
+}
+.cards-pricing-underline{
+  display: none;
 }
 .color-text-1 {
   color: #6e768d;
