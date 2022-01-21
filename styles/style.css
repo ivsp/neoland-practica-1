@@ -118,6 +118,13 @@ header {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.flip-card{
+  
+}
+.flip__card-back{
+  display: none;
+}
 [data-places-cards] {
   margin-top: 10px;
   width: 400px;
