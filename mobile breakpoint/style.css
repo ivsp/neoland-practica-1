@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.responsive__menu {
+    color: black;
+    position: relative;
+    background: #ffffff;
+    height: min-content;
+    width: 100%;
+
+}
+
+
+.responsive__menu-items a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    height: min-content;
+    font-size: 1.5rem;
+
+}
+
+.responsive__menu input[type="checkbox"], .responsive__menu .fa-bars, .responsive__menu .fa-times {
+    position: absolute;
+    margin: -2rem 1rem;
+    padding-top: 0;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 5rem;
+}
+
+.responsive__menu .fa-times {
+    position: absolute;
+    margin:  0;
+    padding-top: 0;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 5rem;
+}
+
+.responsive__menu .fa-bars, .responsive__menu .fa-times {
+    font-size: 3rem;
+    pointer-events: none;
+}
+.responsive__menu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.responsive__menu-items{
+    display: flex;
+    align-items: flex-start;
+
+}
+.responsive__menu nav {
+    display: none;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.responsive__menu input:checked ~ nav {
+    display: inline-block;
+    
+}
+.responsive__menu input:checked ~ .fa-bars {
+    display: none;
+}
+  
+.responsive__menu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+.responsive__menu-items li{
+    list-style: none;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+
+header img {
+    width: 20vw;
+    height: 10vh;}
+
+
+.fa-bars{
+    font-size: 3rem;
+    padding-right: 1.5rem;
+}
+.responsive__menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.responsive__menu-icons div{
+    margin-right: 1rem;   
+    
+}
+.fa-facebook-square{
+    font-size: 2rem;
+    color: #3B5998;
+
+    
+}
+.fa-twitter-square{
+
+    font-size: 2rem;
+    color: #00acee;
+}
+.fa-youtube{
+
+    font-size: 2rem;
+    color: #c4302b;
+}
+.fa-instagram{
+    font-size: 2rem;
+    color: #5B51D8;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.banner video {
+    width: 100%;
+}
+
+.banner-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: auto;
+    color: white;
+}
+
+.banner-text p {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.banner-text h1 {
+    font-size: 1rem;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__tittle{
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-weight:lighter;
+    opacity: 0.8;
+
+}
+
+.mountain {
+    background: url(./media/mountain.jpg) center/cover;
+    width: 400px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+    position: relative;
+    transform-style: preserve-3d;
+ 
+}
+.card__body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.8s ease-in-out;
+    backface-visibility: hidden;
+    transform: perspective(500px);
+
+}
+
+.card__body-back-content{
+    padding: 1.8rem;
+
+}
+.card__body-back-content h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding: 1rem;
+}
+.card__body-back-content p{
+    font-weight: lighter;
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+.card__body.back{
+    background-color: rgb(92, 92, 92);
+    color: white;
+    transform: perspective(1000px) rotateX(180deg);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.mountain:hover .card__body.front{
+    transform: perspective(1000px) rotateX(180deg);
+
+}
+
+.mountain:hover .card__body.back{
+    transform: perspective(500px) rotateX(360deg);
+    
+}
+.cards__main-tittle{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 6px 6px 3px rgba(150, 150, 150, 1);
+  
+}
+
+.lake {
+    background: url(./media/lake.jpg) center/cover;
+    width: 400px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+.card__body.back2{
+    background-color: rgb(92, 92, 92);
+    color: white;
+    transform: perspective(1000px) rotateY(180deg);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.lake:hover .card__body.front{
+    transform: perspective(1000px) rotateY(180deg);
+
+}
+
+.lake:hover .card__body.back2{
+    transform: perspective(500px) rotateY(360deg);
+    
+}
+
+.ocean {
+    background: url(./media/ocean.jpg) center/cover;
+    width: 400px;
+    height:250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    opacity: 0.9;
+    margin-top: 1.5rem;
+    position: relative;
+    transform-style: preserve-3d;
+
+}
+
+.ocean:hover .card__body.front{
+    transform: perspective(1000px) rotateX(180deg);
+
+}
+
+.ocean:hover .card__body.back{
+    transform: perspective(500px) rotateX(360deg);
+    
+}
+
+
+/* PRICING */
+
+.pricing {
+    margin-top: 1.5rem;
+    background: #f0f4f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.princing__tittle h1{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #6e768d;
+    text-align: center;
+
+}
+.princing__tittle h2{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #6e768d;
+    text-align: center;
+    color: #b4bdc6;
+}
+.pricing__box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-box {
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+.pricing-box h1{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+
+}
+.pricing-box--price{
+    display: flex;
+}
+.pricing-box--price--sub{
+    font-size: 2.5rem;
+}
+.sub-index{
+    font-size: 1rem;
+}
+
+
+.pricing-box--price--sub{
+    display: flex;
+    align-items: baseline;
+    text-align: center;
+}
+
+
+.pricing__box-check-list--items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.pricing__box-check-list--items i{
+    margin-right: 1rem; 
+    color: #74ce6a;
+    font-size: 1.3rem;
+
+}
+
+.started {
+    background-color: #71ce73;
+    border-radius: 5px;
+    box-shadow: rgba(126, 126, 126, 0.35) 0px 5px 10px;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.started a{
+    text-decoration: none;
+    color: white;
+
+}
+.started:hover{
+    box-shadow: none;
+/*  transform: scale(1.08);  Esta animación se tiene que poner a partir de la version Desktop y sobre la carta entera*/
+/*  transition: 0.3s linear;  Esta animación se tiene que poner a partir de la version Desktop y sobre la carta entera*/
+  }
+  
+
+.pricing-box2 {
+    
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.pricing-box2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5rem;
+}
+
+.pricing-box2-container h1{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+
+}
+
+.pop{
+    background-color: #22b6d6;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    left: -35%;
+}
+
+.pop p{
+    font-size: 0.7rem;
+    font-weight: lighter;
+  }
+  
+
+/* FOOTER */
+
+footer{
+    background-color: #1b1c20;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+/* MEDIAS */
+
+
+
+@media (max-width:480px){
+    .banner{
+        display: none;
+    }
+}

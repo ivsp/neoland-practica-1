@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./media/html5css3.svg" />
+      <div class="responsive__menu">
+        <input type="checkbox" />
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+        <nav class="responsive__menu-items">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Board</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <div class="responsive__menu-icons">
+            <div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa fa-twitter-square"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <ul class="menu-desktop">
+        <li>HOME</li>
+        <li>CONTACT</li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="banner">
+        <video autoplay loop muted>
+          <source
+            src="./media/pexels-kelly-lacy-9698456.mp4"
+            type="video/mp4"
+          />
+        </video>
+
+        <div class="banner-text">
+          <h1>BIENVENIDO A LA PRÁCTICA DE HTML Y CSS</h1>
+          <p>Vamos a crear una web responsive y animada</p>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h1 class="cards__tittle">Lugares del mundo</h1>
+        <div class="mountain">
+          <div class="card__body front">
+            <div>
+              <h1 class="cards__main-tittle">mountain</h1>
+            </div>
+          </div>
+          <div class="card__body back">
+            <div class="card__body-back-content">
+              <h1 class="cards__back-tittle">mountain</h1>
+              <p>Discover the most beautiful sunsets in the world.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lake">
+          <div class="card__body front">
+            <div>
+              <h1 class="cards__main-tittle">lake</h1>
+            </div>
+          </div>
+          <div class="card__body back2">
+            <div class="card__body-back-content">
+              <h1 class="cards__back-tittle">lake</h1>
+              <p>Relax in the most obscure places on the planet.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ocean">
+          <div class="card__body front">
+            <div>
+              <h1 class="cards__main-tittle">ocean</h1>
+            </div>
+          </div>
+          <div class="card__body back">
+            <div class="card__body-back-content">
+              <h1 class="cards__back-tittle">ocean</h1>
+              <p>Dive into our depths.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <div class="princing__tittle">
+          <h1>Find a plan that's right for you.</h1>
+          <h2>Every plan comes with 30-day free trial.</h2>
+        </div>
+
+        <div class="pricing__box-container">
+          <div class="pricing-box">
+            <h1>Bronze Packege</h1>
+            <div class="pricing-box--price">
+              <div>
+                <h2><sup>$</sup></h2>
+              </div>
+              <div class="pricing-box--price--sub">
+                <h2>10</h2>
+                <h2 class="sub-index">Month</h2>
+              </div>
+            </div>
+
+            <div class="pricing__box-check-list">
+              <div class="pricing__box-check-list--items">
+                <i class="fa fa-check-circle"></i>
+                <p>Unlimited Listing</p>
+              </div>
+
+              <div class="pricing__box-check-list--items">
+                <i class="fa fa-check-circle"></i>
+                <p>Edit Your Listing</p>
+              </div>
+
+              <div class="pricing__box-check-list--items">
+                <i class="fa fa-check-circle"></i>
+                <p>Approve Reviews</p>
+              </div>
+            </div>
+
+            <div class="started">
+              <a href="#">Get Started Now</a>
+            </div>
+          </div>
+
+          <div class="pricing-box2">
+            <div class="pop">
+              <p>MOST POPULAR</p>
+            </div>
+            <div class="pricing-box2-container">
+              <h1>Gold Packege</h1>
+              <div class="pricing-box--price">
+                <div>
+                  <h2><sup>$</sup></h2>
+                </div>
+                <div class="pricing-box--price--sub">
+                  <h2>19</h2>
+                  <h2 class="sub-index">Month</h2>
+                </div>
+              </div>
+
+              <div class="pricing__box-check-list">
+                <div class="pricing__box-check-list--items">
+                  <i class="fa fa-check-circle"></i>
+                  <p>Unlimited Listing</p>
+                </div>
+
+                <div class="pricing__box-check-list--items">
+                  <i class="fa fa-check-circle"></i>
+                  <p>Edit Your Listing</p>
+                </div>
+
+                <div class="pricing__box-check-list--items">
+                  <i class="fa fa-check-circle"></i>
+                  <p>Approve Reviews</p>
+                </div>
+
+                <div class="pricing__box-check-list--items">
+                  <i class="fa fa-check-circle"></i>
+                  <p>Take Booking Online</p>
+                </div>
+
+                <div class="pricing__box-check-list--items">
+                  <i class="fa fa-check-circle"></i>
+                  <p>24/7 Support Service</p>
+                </div>
+              </div>
+
+              <div class="started">
+                <a href="#">Get Started Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-box">
+            <h1>Platinum Packege</h1>
+            <div class="pricing-box--price">
+              <div>
+                <h2><sup>$</sup></h2>
+              </div>
+              <div class="pricing-box--price--sub">
+                <h2>49</h2>
+                <h2 class="sub-index">Month</h2>
+              </div>
+            </div>
+
+            <div class="pricing__box-check-list">
+              <div class="pricing__box-check-list--items">
+                <i class="fa fa-check-circle"></i>
+                <p>Unlimited Listing</p>
+              </div>
+
+              <div class="pricing__box-check-list--items">
+                <i class="fa fa-check-circle"></i>
+                <p>Edit Your Listing</p>
+              </div>
+
+              <div class="pricing__box-check-list--items">
+                <i class="fa fa-check-circle"></i>
+                <p>Approve Reviews</p>
+              </div>
+            </div>
+
+            <div class="started">
+              <a href="#">Get Started Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>Copyright &copy; mi equipo 2022</p>
+      </footer>
+    </main>
+  </body>
+</html>

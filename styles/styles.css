@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #1b1c20;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.header__row-view{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: relative;
+}
+.row-view {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+[data-bakground-image] {
+  width: 150px;
+  height: 100px;
+}
+
+[data-bakground-image="HTML-CSS"] {
+  background-image: url(../src/html5css3.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.fa-bars {
+  font-size: 60px;
+  padding-right: 20px;
+}
+
+#background-video {
+  width: 100%;
+  opacity: 0.8;
+}
+.banner__text-over-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  
+}
+
+
+.text-white {
+  color: white;
+}
+.uppercase {
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.font-size-30px {
+  font-size: 30px;
+}
+.font-size-20px {
+  font-size: 20px;
+}
+.font-size-10px {
+  font-size: 10px;
+}
+.font-size-40px {
+  font-size: 40px;
+}
+.margin-top-10px {
+  margin-top: 10px;
+}
+.margin-top-20px {
+  margin-top: 20px;
+}
+.margin-top-40px {
+  margin-top: 40px;
+}
+.margin-rigth-10px {
+  margin-right: 10px;
+}
+.padding-20px {
+  padding: 20px;
+}
+.padding-5px {
+  padding: 5px;
+}
+.padding-bottom-20px {
+  padding-bottom: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+
+.text-shadow {
+  text-shadow: 6px 6px 3px rgba(150, 150, 150, 1);
+}
+.column-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.wrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flip-card{
+  
+}
+.flip__card-back{
+  display: none;
+}
+[data-places-cards] {
+  margin-top: 10px;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+  opacity: 0.9;
+}
+
+[data-places-cards="mountain"] {
+  background-image: url(../src/mountain.jpg);
+}
+[data-places-cards="lake"] {
+  background-image: url(../src/lake.jpg);
+}
+[data-places-cards="ocean"] {
+  background-image: url(../src/ocean.jpg);
+}
+.pricing {
+  background-color: #f0f4f7;
+}
+.cards-pricing-underline{
+  display: none;
+}
+.color-text-1 {
+  color: #6e768d;
+}
+
+.color-text-2 {
+  color: #b4bdc6;
+}
+
+.background-color-white {
+  background-color: #ffffff;
+}
+
+.cards-pricing {
+  width: 50vh;
+}
+
+footer {
+  background-color: #1b1c20;
+  width: 100%;
+  height: 5vh;
+  text-align: center;
+  padding: 5px;
+}
+.color-check {
+  color: #74ce6a;
+}
+.button {
+  background-color: #71ce73;
+  border-radius: 5px;
+  box-shadow: rgba(126, 126, 126, 0.35) 0px 5px 10px;
+}
