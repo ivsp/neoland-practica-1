@@ -9,58 +9,97 @@
 </head>
 <body>
 
-        
+    <div class="capa-imagen-fondo">
         <div class="fondo__contenedor">
-            <div class="cuadrado-negro__contenedor"></div>
-                <form class="general-formulario__contenedor">
+        
+            
+                <form  class="general-formulario__contenedor" action="https://www.google.com" method="GET">
                 
                     <div class="titulo__formulario">Formulario de contacto</div>
                     <div class="subtitulo__formulario">Gracias por tomarte el tiempo para contactar con nosotros y ayudarnos a mejorar</div>
 
-                    <div class="formulario__titulos-celdas">Nombre</div>
+                    <label for="NOMBRE"><div class="formulario__titulos-celdas-nombre" >Nombre</div></label>
                     <div class="input__contenedor">
-                        <input class="formulario__inputs-texto" type="text" name="Nombre" value="Introduce tu nombre">
+                        
+                        <input class="formulario__inputs-texto" type="text" name="Nombre" value="" ID="NOMBRE" placeholder="Introduce tu nombre" required>
                     </div>
 
-                    <div class="formulario__titulos-celdas">Email</div>
+                    <label for="EMAIL"><div class="formulario__titulos-celdas" >Email</div></label>
                     <div class="input__contenedor">
-                        <input class="formulario__inputs-texto" type="text" name="Email" value="Introduce tu Email">
+                        <input class="formulario__inputs-texto" type="email" name="Email" id="EMAIL" placeholder="Introduce tu Email" required>
                     </div>
 
-                    <div class="formulario__titulos-celdas">Edad</div>
+                    <label for="EDAD"><div class="formulario__titulos-celdas" >Edad</div></label>
                     <div class="input__contenedor">
-                        <input class="formulario__inputs-texto" type="text" name="Edad" value="Introduce tu edad, debes ser mayor de edad">
-                    </div>
-
-                    <div class="formulario__titulos-celdas">Edad</div>
-                    <div class="input__contenedor">
-                        <input class="formulario__inputs-texto" type="text" name="Rol" value="¿Qué rol describe mejor tu situación actual?">
+                        <input class="formulario__inputs-texto" type="number" name="Edad" id="EDAD" placeholder="Introduce tu edad, debes ser mayor de edad" min="18" required>
                     </div>
 
                     <div class="formulario__titulos-celdas">¿Qué rol describe mejor tu situación actual?</div>
                     <div class="input__contenedor">
-                        <select class="formulario__inputs-texto" id="rol" name="Rol" value="¿Qué rol describe mejor tu situación actual?">
-                            <option value="" selected="selected">Selecciona tu rol actual</option>
-                            <option value="estudiante">Estudiante</option>
-                            <option value="Trabajo a tiempo completo">Trabajo a tiempo completo</option>
-                            <option value="Freelance">Freelance</option>
-                            <option value="Buscnado trabajo">Buscando trabajo</option>
-                    
+                        <select class="formulario__inputs-texto" id="Rol" name="Rol-actual"  required>
+                            <option value="" selected >Selecciona tu rol actual</option>
+                            <option >Estudiante</option>
+                            <option >Trabajo a tiempo completo</option>
+                            <option >Freelance</option>
+                            <option >Buscando trabajo</option>
                         </select>
                     </div>
 
                     <div class="formulario__titulos-celdas">¿Recomendarías esta página a un desconocido?</div>
                     <div class="input__contenedor">
-                        <label>Definitivamente Si<input type="radio" name="curso" value="ceramica" checked></label>
-                        <label>Quizás<input type="radio" name="curso" value="jardineria" ></label>
-                        <label>No estoy seguro<input type="radio" name="curso" value="pintura"></label>
+                        <label for="si">Definitivamente Si<input type="radio" name="recomendar" id="si" value="definitivamente si" checked ></label>
+                        <label for="quizas">Quizás<input type="radio" name="recomendar" value="quizas" id="quizas" ></label>
+                        <label for= "No-estoy-seguro">No estoy seguro<input type="radio" name="recomendar" value="no estoy seguro" id="No-estoy-seguro"></label>
                     </div>
     
 
+                    <div class="formulario__titulos-celdas">¿Qué recomendaciones te gustaría recibir? (Marca todas las que apliquen)</div>
+                    <div class="input__contenedor">
+                    <div class="input__contenedor--recomendaciones-de-todos">
+                        <div class="input__contenedor--recomendaciones">
+                            <input type="checkbox" name="frontend" >Proyectos Front-end
+                        </div>
+                        <div class="input__contenedor--recomendaciones">
+                            <input type="checkbox" name="backend" >Proyectos Back-end
+                        </div>
+                        <div class="input__contenedor--recomendaciones">
+                            <input type="checkbox" name="social">Social Media (Marketing)
+                        </div>
+                        <div class="input__contenedor--recomendaciones">
+                            <input type="checkbox" name="videojuegos" >Desarrollo de videojuegos
+                        </div>
+                        <div class="input__contenedor--recomendaciones">
+                            <input type="checkbox" name="tutoriales" >Tutoriales de UX/UI
+                        </div>
+                        <div class="input__contenedor--recomendaciones">
+                            <input type="checkbox" name="otros">Otros
+                        </div>
+                    </div>
+                    </div>
+                    
 
 
+                    <div class="formulario__titulos-celdas-reco">¿Cuando prefererías que te contactasemos?</div>
+                    <div class="input__contenedor">
+                        <input class="formulario__inputs-texto" type="date" name="contactar" min="2022-01-01" required >
+                    </div>
 
-                </form>
+
+                    <label for="COMENTARIOS"><div class="formulario__titulos-celdas">¿Otros comentarios o sugerencias?</div></label>
+                    <div class="input__contenedor">
+                        <textarea class="formulario__inputs-texto"  name="comentarios" id="COMENTARIOS" placeholder="Introduzca sus comentarios..."></textarea>
+                    </div>
+
+                   
+                    <div class="input__contenedor">
+                        <label for="enviar"></label>
+                        <button class="formulario__inputs-texto" name="enviar" id="enviar" type="submit">Enviar</button>
+                    </div>
+                
+             </form>
+                
+
+            </div>
 
         </div>
 
