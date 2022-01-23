@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
+CSS PARA LA VERSIÓN MOBILE
+*/
 
 /* HEADER */
 
@@ -11,6 +13,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.desktop__menu-nav{
+    display: none;
+}
+.desktop__menu-image{
+    display: none;
+}
+
+.desktop__menu-icons{
+    display: none;
 }
 
 .responsive__menu {
@@ -94,7 +107,8 @@ header{
 
 header img {
     width: 20vw;
-    height: 10vh;}
+    height: 10vh;
+}
 
 
 .fa-bars{
@@ -186,6 +200,7 @@ header img {
     background: url(./media/mountain.jpg) center/cover;
     width: 400px;
     height:250px;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,6 +271,8 @@ header img {
     background: url(./media/lake.jpg) center/cover;
     width: 400px;
     height:250px;
+    margin-right: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,6 +305,8 @@ header img {
     background: url(./media/ocean.jpg) center/cover;
     width: 400px;
     height:250px;
+    margin-right: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,6 +370,7 @@ header img {
     align-items: center;
     padding-bottom: 1.5rem;
     padding-top: 1rem;
+
 }
 
 .pricing-box h1{
@@ -407,8 +427,6 @@ header img {
 }
 .started:hover{
     box-shadow: none;
-/*  transform: scale(1.08);  Esta animación se tiene que poner a partir de la version Desktop y sobre la carta entera*/
-/*  transition: 0.3s linear;  Esta animación se tiene que poner a partir de la version Desktop y sobre la carta entera*/
   }
   
 
@@ -421,7 +439,7 @@ header img {
     width: 50vh;
     align-items: center;
     padding-bottom: 1.5rem;
-    margin: 2.5rem 0;
+    margin: 2.5rem 2rem;
 }
 
 .pricing-box2-container{
@@ -480,12 +498,221 @@ footer p {
 
 
 
-/* MEDIAS */
+/*
+CSS PARA LA VERSIÓN TABLET --> robin
+*/
+@media only screen and (min-width: 481px) and (max-width: 1024px){
 
 
 
-@media (max-width:480px){
-    .banner{
+
+
+
+}
+
+
+
+/*
+CSS PARA LA VERSIÓN DESKTOP
+*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+
+
+    /*HEADER*/
+    .menu__image{
+        display: none;
+
+    }
+    .responsive__menu{
         display: none;
     }
+
+    .desktop__menu-nav{
+        display:block;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .desktop__menu-image{
+        display: flex;
+        width: 10vw;
+        height: 10vh;
+        background-image: url(./media/html5css3.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .menu-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-desktop li{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0 2rem;
+        
+    }
+    .menu-desktop a{
+        text-decoration: none;
+        color: black;
+        padding: 1.5rem;
+
+    }
+    .menu-desktop a:hover{
+        background-color: black;
+        color: #ffffff;
+        text-decoration:underline;
+    }
+    
+    .desktop__menu-icons{
+        display: flex;
+    }
+    .desktop__menu-icons > a{
+        margin: 0rem 0.3rem;
+    }
+
+    .desktop__menu-icons > a:hover{
+        transition: 0.25s ease-in-out;
+        transform: scale(1.25);    
+    }
+
+    /*BANNER*/
+
+    .banner-text{
+        width: 50%;
+    }
+    .banner-text > *{
+        margin: 0.8rem 0rem;
+    }
+
+    /*CARDS*/
+
+    .cards__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    /*PRICING*/
+   /*
+   INCLUIR LO MISMO QUE EN TABLET --> ROBIN
+   */
+
+
+}
+
+/*CSS PARA LA VERSIÓN DESKTOP-XL*/
+
+@media only screen and (min-width: 1441px){
+
+        /*HEADER*/
+        .menu__image{
+            display: none;
+    
+        }
+        .responsive__menu{
+            display: none;
+        }
+    
+        .desktop__menu-nav{
+            display:block;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        .desktop__menu-image{
+            display: flex;
+            width: 10vw;
+            height: 10vh;
+            background-image: url(./media/html5css3.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .menu-desktop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-desktop li{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            list-style: none;
+            margin: 0 2rem;
+            
+        }
+        .menu-desktop a{
+            text-decoration: none;
+            color: black;
+            padding: 1.5rem;
+    
+        }
+        .menu-desktop a:hover{
+            background-color: black;
+            color: #ffffff;
+            text-decoration:underline;
+        }
+        
+        .desktop__menu-icons{
+            display: flex;
+        }
+        .desktop__menu-icons > a{
+            margin: 0rem 0.3rem;
+        }
+    
+        .desktop__menu-icons > a:hover{
+            transition: 0.25s ease-in-out;
+            transform: scale(1.25);    
+        }
+    
+        /*BANNER*/
+    
+        .banner-text{
+            width: 50%;
+        }
+        .banner-text > *{
+            margin: 0.8rem 0rem;
+        }
+    
+        /*CARDS*/
+    
+        .cards__container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    
+        }
+
+        /*PRICING*/
+        
+        .pricing__box-container{
+            flex-direction: row;
+        }
+
+        .pricing-box:hover{
+            transition: 0.3s linear;
+            transform: scale(1.08); 
+        }
+        .pricing-box2:hover{
+            transition: 0.3s linear;
+            transform: scale(1.08); 
+        }
+
+        .pop{
+            left: 35%;
+        }
+        .pricing-box2:hover .pop p{
+            transition: 0.5s ease;
+            transform: rotateY(360deg); 
+        }
+
 }

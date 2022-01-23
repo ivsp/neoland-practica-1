@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Web responsive y animada</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -19,7 +19,32 @@
   </head>
   <body>
     <header>
-      <img src="./media/html5css3.svg" />
+      <!-- ESTE ES EL MENÚ DE NAVEGACIÓN PARA LA VERSIÓN DESKTOP-->
+      <div class="desktop__menu-image"></div>
+      <div class="desktop__menu-nav">
+        <ul class="menu-desktop">
+          <li><a href="">home</a></li>
+          <li><a href="">board</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+      </div>
+      <div class="desktop__menu-icons">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa fa-twitter-square"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+      <!-- ESTE ES EL MENÚ DE NAVEGACIÓN PARA LA VERSIÓN MOBILE-->
+
+      <img class="menu__image" src="./media/html5css3.svg" />
       <div class="responsive__menu">
         <input type="checkbox" />
         <i class="fa fa-bars"></i>
@@ -54,10 +79,6 @@
           </div>
         </nav>
       </div>
-      <ul class="menu-desktop">
-        <li>HOME</li>
-        <li>CONTACT</li>
-      </ul>
     </header>
 
     <main>
@@ -71,50 +92,52 @@
 
         <div class="banner-text">
           <h1>BIENVENIDO A LA PRÁCTICA DE HTML Y CSS</h1>
-          <p>Vamos a crear una web responsive y animada</p>
+          <p>Vamos a crear una web responsive y animada.</p>
         </div>
       </section>
 
       <section class="cards">
         <h1 class="cards__tittle">Lugares del mundo</h1>
-        <div class="mountain">
-          <div class="card__body front">
-            <div>
-              <h1 class="cards__main-tittle">mountain</h1>
+        <div class="cards__container">
+          <div class="mountain">
+            <div class="card__body front">
+              <div>
+                <h1 class="cards__main-tittle">mountain</h1>
+              </div>
+            </div>
+            <div class="card__body back">
+              <div class="card__body-back-content">
+                <h1 class="cards__back-tittle">mountain</h1>
+                <p>Discover the most beautiful sunsets in the world.</p>
+              </div>
             </div>
           </div>
-          <div class="card__body back">
-            <div class="card__body-back-content">
-              <h1 class="cards__back-tittle">mountain</h1>
-              <p>Discover the most beautiful sunsets in the world.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="lake">
-          <div class="card__body front">
-            <div>
-              <h1 class="cards__main-tittle">lake</h1>
+          <div class="lake">
+            <div class="card__body front">
+              <div>
+                <h1 class="cards__main-tittle">lake</h1>
+              </div>
+            </div>
+            <div class="card__body back2">
+              <div class="card__body-back-content">
+                <h1 class="cards__back-tittle">lake</h1>
+                <p>Relax in the most obscure places on the planet.</p>
+              </div>
             </div>
           </div>
-          <div class="card__body back2">
-            <div class="card__body-back-content">
-              <h1 class="cards__back-tittle">lake</h1>
-              <p>Relax in the most obscure places on the planet.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="ocean">
-          <div class="card__body front">
-            <div>
-              <h1 class="cards__main-tittle">ocean</h1>
+          <div class="ocean">
+            <div class="card__body front">
+              <div>
+                <h1 class="cards__main-tittle">ocean</h1>
+              </div>
             </div>
-          </div>
-          <div class="card__body back">
-            <div class="card__body-back-content">
-              <h1 class="cards__back-tittle">ocean</h1>
-              <p>Dive into our depths.</p>
+            <div class="card__body back">
+              <div class="card__body-back-content">
+                <h1 class="cards__back-tittle">ocean</h1>
+                <p>Dive into our depths.</p>
+              </div>
             </div>
           </div>
         </div>
