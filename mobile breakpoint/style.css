@@ -504,5 +504,22 @@ footer p {
         padding: 15px;
     }
 
+    .pricing__box-check-list{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    .pricing-box2{
+        width: 85%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+   
     
 }
