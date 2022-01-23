@@ -363,6 +363,9 @@ header img {
 .pricing-box--price{
     display: flex;
 }
+
+
+
 .pricing-box--price--sub{
     font-size: 2.5rem;
 }
@@ -490,18 +493,26 @@ footer p {
     }
 }
 
+
+
+
 @media (max-width:1024px){
     .pricing {
         display: flex;
+
     }
     
     .pricing-box{
-        width: 85%;
-        height: 150px;
+        width: 120%;
+        height: 160px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 15px;
+    }
+
+    .pricing-box h1{
+        font-size: 15px;
     }
 
     .pricing__box-check-list{
@@ -513,13 +524,65 @@ footer p {
     }
 
     .pricing-box2{
-        width: 85%;
-        height: 300px;
+        width: 120%;
+        height: 250px;
+        
+    }
+
+    .pricing-box2-container{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        
+    }
+
+  
+
+   
+    .pricing-box2-container h1 {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+      
+    }
+    
+    .pricing-box--price{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       position: relative;
+       right: -60px;
+    }
+
+    sup {
+        right: 50px;
+        position: relative;
+    }
+
+    .pricing-box--price--sub{
+        top: -30px;
+        position: relative;
+        font-size: 25px;
+        font-weight: lighter;
+    }
+    
+    .pricing__box-check-list{
+        margin-left: 200px;
+        margin-right:70px ;
     }
 
    
-    
 }
+
+@media (max-width:860px){
+    .pricing-box{
+        width: 90%;
+    }
+
+    .pricing-box2{
+        width: 90%;
+        height: 250px;
+        
+    }
+
+}
+
