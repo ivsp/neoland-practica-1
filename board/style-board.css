@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+CSS PARA LA VERSIÓN MOBILE
+*/
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.desktop__menu-nav{
+    display: none;
+}
+.desktop__menu-image{
+    display: none;
+}
+
+.desktop__menu-icons{
+    display: none;
+}
+
+.responsive__menu {
+    color: black;
+    position: relative;
+    background: #ffffff;
+    height: min-content;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.responsive__menu-items a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    height: min-content;
+    font-size: 1.5rem;
+
+}
+
+.responsive__menu input[type="checkbox"], .responsive__menu .fa-bars, .responsive__menu .fa-times {
+    position: absolute;
+    margin: -1.2rem 1rem;
+    padding-top: 0;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 5rem;
+}
+
+.responsive__menu .fa-times {
+    position: absolute;
+    margin:  0;
+    padding-top: 0;
+    right: 0;
+    top: 0;
+    width: 3rem;
+    height: 5rem;
+}
+
+.responsive__menu .fa-bars, .responsive__menu .fa-times {
+    font-size: 3rem;
+    pointer-events: none;
+}
+.responsive__menu input[type="checkbox"] {
+    opacity: 0;
+}
+
+.responsive__menu-items{
+    display: flex;
+    align-items: flex-start;
+
+}
+.responsive__menu nav {
+    display: none;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+.responsive__menu input:checked ~ nav {
+    display: inline-block;
+    
+}
+.responsive__menu input:checked ~ .fa-bars {
+    display: none;
+}
+  
+.responsive__menu input:not(:checked) ~ .fa-times {
+    display: none;
+}
+.responsive__menu-items li{
+    list-style: none;
+}
+
+.menu-desktop{
+    display: none;
+}
+
+
+header img {
+    width: 20vw;
+    height: 10vh;
+}
+
+
+.fa-bars{
+    font-size: 3rem;
+    padding-right: 1.5rem;
+}
+.responsive__menu-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.responsive__menu-icons div{
+    margin-right: 1rem;   
+    
+}
+.fa-facebook-square{
+    font-size: 2rem;
+    color: #3B5998;
+
+    
+}
+.fa-twitter-square{
+
+    font-size: 2rem;
+    color: #00acee;
+}
+.fa-youtube{
+
+    font-size: 2rem;
+    color: #c4302b;
+}
+.fa-instagram{
+    font-size: 2rem;
+    color: #5B51D8;
+}
+
+/*BOARD*/
+body{
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 5vh;
+}
+.chess__container{
+
+    position: relative;
+}
+.tittle{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+
+#check-box{
+    margin: 0 1rem;
+    position: absolute;
+    top: 0.7rem;
+    left: 16.8rem;
+
+}
+/*Con este selector selecciono los divs dentro de la clase chess__row*/
+#check-box:checked  +  .chess__container-bg > .chess__rows > div  {
+    transition: 1s ease-out;
+    transform: rotateX(180deg);  
+}
+
+/*Con este selector selecciono el div con la clase chess__container-bg*/
+#check-box:checked  +  div {
+    transition: 1s ease-out;
+    transform: rotateX(180deg);  
+}
+
+
+.chess__container-bg{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+
+.chess__rows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min-content;
+    
+}
+.chess__rows > *{
+    width: 6vh;
+    height: 6vh;
+    border: 1px solid #000000;
+
+}
+.white__box{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+.black__box{
+    background-color: #a8a8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #1b1c20;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+/*
+CSS PARA LA VERSIÓN DESKTOP
+*/
+
+@media only screen and (min-width: 1025px) {
+
+
+    /*HEADER*/
+    .menu__image{
+        display: none;
+
+    }
+    .responsive__menu{
+        display: none;
+    }
+
+    .desktop__menu-nav{
+        display:block;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .desktop__menu-image{
+        display: flex;
+        width: 10vw;
+        height: 10vh;
+        background-image: url(./src/html5css3.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .menu-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-desktop li{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0 2rem;
+        
+    }
+    .menu-desktop a{
+        text-decoration: none;
+        color: black;
+        padding: 1.5rem;
+
+    }
+    .menu-desktop a:hover{
+        background-color: black;
+        color: #ffffff;
+        text-decoration:underline;
+    }
+    
+    .desktop__menu-icons{
+        display: flex;
+    }
+    .desktop__menu-icons > a{
+        margin: 0rem 0.3rem;
+    }
+
+    .desktop__menu-icons > a:hover{
+        transition: 0.25s ease-in-out;
+        transform: scale(1.25);    
+    }
+
+ 
+
+
+}
+
+
+
+
+
+
+
+
+

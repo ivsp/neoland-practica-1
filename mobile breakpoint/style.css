@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
+CSS PARA LA VERSIÓN MOBILE
+*/
 
 /* HEADER */
 
@@ -11,6 +13,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.desktop__menu-nav{
+    display: none;
+}
+.desktop__menu-image{
+    display: none;
+}
+
+.desktop__menu-icons{
+    display: none;
 }
 
 .responsive__menu {
@@ -94,7 +107,8 @@ header{
 
 header img {
     width: 20vw;
-    height: 10vh;}
+    height: 10vh;
+}
 
 
 .fa-bars{
@@ -186,6 +200,7 @@ header img {
     background: url(./media/mountain.jpg) center/cover;
     width: 400px;
     height:250px;
+    margin-right: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -256,6 +271,8 @@ header img {
     background: url(./media/lake.jpg) center/cover;
     width: 400px;
     height:250px;
+    margin-right: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,6 +305,8 @@ header img {
     background: url(./media/ocean.jpg) center/cover;
     width: 400px;
     height:250px;
+    margin-right: 2rem;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,6 +370,7 @@ header img {
     align-items: center;
     padding-bottom: 1.5rem;
     padding-top: 1rem;
+
 }
 
 .pricing-box h1{
@@ -407,8 +427,6 @@ header img {
 }
 .started:hover{
     box-shadow: none;
-/*  transform: scale(1.08);  Esta animación se tiene que poner a partir de la version Desktop y sobre la carta entera*/
-/*  transition: 0.3s linear;  Esta animación se tiene que poner a partir de la version Desktop y sobre la carta entera*/
   }
   
 
@@ -421,7 +439,7 @@ header img {
     width: 50vh;
     align-items: center;
     padding-bottom: 1.5rem;
-    margin: 2.5rem 0;
+    margin: 2.5rem 2rem;
 }
 
 .pricing-box2-container{
@@ -480,13 +498,14 @@ footer p {
 
 
 
-/* MEDIAS */
+/*
+CSS PARA LA VERSIÓN TABLET --> robin
+*/
 
 
-
-
-@media (max-width:1024px){
-    .pricing-box{
+@media only screen and (min-width: 481px) and (max-width: 1024px){
+    
+    .pricing-box {
         width: 110%;
         height: 150px;
         display: flex;
