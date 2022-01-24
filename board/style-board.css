@@ -167,23 +167,64 @@ body{
     margin: 0 1rem;
     font-size: 1rem;
 }
+label{
+    height: 1rem;
+    width: 2rem;
+    background-color: gray;
+    position: absolute;
+    top: 0.7rem;
+    left: 18rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: 0.5s linear ease-in-out;
 
+}
+
+.switch::after{
+    content: '';
+    display: block;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: rgb(190, 190, 190);
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.5px;
+    transition: 0.5s linear ease-in-out;
+
+}
 
 #check-box{
     margin: 0 1rem;
     position: absolute;
     top: 0.7rem;
     left: 16.8rem;
+    display: none;
 
 }
+#check-box:checked + label::after{
+    margin: 0.12rem 1rem;
+    position: absolute;
+    top: 0rem;
+    background-color: rgb(190, 190, 190);
+
+}
+
+#check-box:checked + label{
+    background-color: rgb(1, 182, 25);
+
+}
+
 /*Con este selector selecciono los divs dentro de la clase chess__row*/
-#check-box:checked  +  .chess__container-bg > .chess__rows > div  {
+#check-box:checked  ~  .chess__container-bg > .chess__rows > div  {
     transition: 1s ease-out;
     transform: rotateX(180deg);  
 }
 
 /*Con este selector selecciono el div con la clase chess__container-bg*/
-#check-box:checked  +  div {
+#check-box:checked  ~  div {
     transition: 1s ease-out;
     transform: rotateX(180deg);  
 }
