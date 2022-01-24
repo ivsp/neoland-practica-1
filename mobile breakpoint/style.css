@@ -484,8 +484,78 @@ footer p {
 
 
 
-@media (max-width:480px){
-    .banner{
+
+@media (max-width:1024px){
+    .pricing-box{
+        width: 110%;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .pricing-box--price {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .pricing-box--price--sub{
+        bottom:35px;
+        position: relative;
+        
+    }
+
+    .pricing-box--price--sub h2{
+        font-weight: lighter;
+    }
+    .pricing-box sup {
+        position: relative;
+        right: 50px;
+    }
+
+    .pricing-box2{
+        width: 110%;
+        height: 250px;
+        display: flex;
+       
+    }
+
+    .pricing-box2-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pricing-box2-container sup{
+        position: relative;
+        right: 48px;
+    }
+
+    .pop{
+        position: relative;
+        left: -320px;
+    }
+
+    .pricing-box2-container .pricing__box-check-list{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}    
+
+@media (max-width:700px){
+    .pricing-box{
+        width: 80%;
+    }
+
+    .pricing-box2{
+        width: 80%;
+        height: 350px;
+        justify-content: center;
+    }
+
+    .pop{
         display: none;
     }
 }
+
