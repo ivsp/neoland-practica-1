@@ -244,18 +244,18 @@ header img {
 .card__body.back{
     background-color: rgb(92, 92, 92);
     color: white;
-    transform: perspective(1000px) rotateX(180deg);
+    transform: perspective(1000px) rotateY(180deg);
     border-radius: 15px;
     text-align: center;
 }
 
 .mountain:hover .card__body.front{
-    transform: perspective(1000px) rotateX(180deg);
+    transform: perspective(1000px) rotateY(180deg);
 
 }
 
 .mountain:hover .card__body.back{
-    transform: perspective(500px) rotateX(360deg);
+    transform: perspective(500px) rotateY(360deg);
     
 }
 .cards__main-tittle{
@@ -286,18 +286,18 @@ header img {
 .card__body.back2{
     background-color: rgb(92, 92, 92);
     color: white;
-    transform: perspective(1000px) rotateY(180deg);
+    transform: perspective(1000px) rotateX(180deg);
     border-radius: 15px;
     text-align: center;
 }
 
 .lake:hover .card__body.front{
-    transform: perspective(1000px) rotateY(180deg);
+    transform: perspective(1000px) rotateX(180deg);
 
 }
 
 .lake:hover .card__body.back2{
-    transform: perspective(500px) rotateY(360deg);
+    transform: perspective(500px) rotateX(360deg);
     
 }
 
@@ -319,12 +319,12 @@ header img {
 }
 
 .ocean:hover .card__body.front{
-    transform: perspective(1000px) rotateX(180deg);
+    transform: perspective(1000px) rotateY(180deg);
 
 }
 
 .ocean:hover .card__body.back{
-    transform: perspective(500px) rotateX(360deg);
+    transform: perspective(500px) rotateY(360deg);
     
 }
 
@@ -380,6 +380,12 @@ header img {
     font-weight: bold;
 
 }
+.pricing-box--offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .pricing-box--price{
     display: flex;
 }
@@ -396,7 +402,12 @@ header img {
     align-items: baseline;
     text-align: center;
 }
+.pricing__box-check-list{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 
+}
 
 .pricing__box-check-list--items{
     display: flex;
@@ -427,7 +438,8 @@ header img {
 }
 .started:hover{
     box-shadow: none;
-  }
+
+}
   
 
 .pricing-box2 {
@@ -501,80 +513,312 @@ footer p {
 /*
 CSS PARA LA VERSIÓN TABLET --> robin
 */
-
-
 @media only screen and (min-width: 481px) and (max-width: 1024px){
-    
-    .pricing-box {
-        width: 110%;
-        height: 150px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
 
-    .pricing-box--price {
-        flex-direction: column;
-        display: flex;
-        align-items: center;
-    }
+    /* PRICING*/
 
-    .pricing-box--price--sub{
-        bottom:35px;
-        position: relative;
-        
-    }
-
-    .pricing-box--price--sub h2{
-        font-weight: lighter;
-    }
-    .pricing-box sup {
-        position: relative;
-        right: 50px;
-    }
-
-    .pricing-box2{
-        width: 110%;
-        height: 250px;
-        display: flex;
-       
-    }
-
-    .pricing-box2-container{
-        display: flex;
-        flex-direction: row;
-    }
-
-    .pricing-box2-container sup{
-        position: relative;
-        right: 48px;
-    }
-
-    .pop{
-        position: relative;
-        left: -320px;
-    }
-
-    .pricing-box2-container .pricing__box-check-list{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-
-}    
-
-@media (max-width:700px){
-    .pricing-box{
-        width: 80%;
-    }
-
-    .pricing-box2{
-        width: 80%;
-        height: 350px;
-        justify-content: center;
-    }
-
-    .pop{
-        display: none;
-    }
+.pricing__box-container{
+    width: 100%;
 }
 
+    .pricing-box{
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+
+    .pricing-box--offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.pricing-box--offer h1{
+    text-align: center;
+    width: fit-content;
+}
+.pricing__box-check-list{
+    width: 30%;
+}
+
+.started{
+    width: max-content;
+    text-align: center;
+}
+.pricing-box2{
+    width: 90%;
+    justify-content: space-evenly;
+
+    
+}
+
+
+.pricing-box2-container{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.pop{
+    left: -40%;
+}
+
+
+}
+
+
+
+/*
+CSS PARA LA VERSIÓN DESKTOP
+*/
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px){
+
+
+    /*HEADER*/
+    .menu__image{
+        display: none;
+
+    }
+    .responsive__menu{
+        display: none;
+    }
+
+    .desktop__menu-nav{
+        display:block;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .desktop__menu-image{
+        display: flex;
+        width: 10vw;
+        height: 10vh;
+        background-image: url(./media/html5css3.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .menu-desktop{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu-desktop li{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        list-style: none;
+        margin: 0 2rem;
+        
+    }
+    .menu-desktop a{
+        text-decoration: none;
+        color: black;
+        padding: 1.5rem;
+
+    }
+    .menu-desktop a:hover{
+        background-color: black;
+        color: #ffffff;
+        text-decoration:underline;
+    }
+    
+    .desktop__menu-icons{
+        display: flex;
+    }
+    .desktop__menu-icons > a{
+        margin: 0rem 0.3rem;
+    }
+
+    .desktop__menu-icons > a:hover{
+        transition: 0.25s ease-in-out;
+        transform: scale(1.25);    
+    }
+
+    /*BANNER*/
+
+    .banner-text{
+        width: 50%;
+    }
+    .banner-text > *{
+        margin: 0.8rem 0rem;
+    }
+
+    /*CARDS*/
+
+    .cards__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+    /*PRICING*/
+   
+    
+.pricing__box-container{
+    width: 100%;
+}
+
+    .pricing-box{
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+    .pricing-box--offer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.pricing-box--offer h1{
+    text-align: center;
+    width: max-content;
+}
+.pricing__box-check-list{
+    width: 30%;
+}
+
+.started{
+    width: max-content;
+    text-align: center;
+}
+.pricing-box2{
+    width: 90%;
+    justify-content: space-evenly;
+
+    
+}
+
+
+.pricing-box2-container{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.pop{
+    left: -40%;
+}
+
+
+
+}
+
+/*CSS PARA LA VERSIÓN DESKTOP-XL*/
+
+@media only screen and (min-width: 1441px){
+
+        /*HEADER*/
+        .menu__image{
+            display: none;
+    
+        }
+        .responsive__menu{
+            display: none;
+        }
+    
+        .desktop__menu-nav{
+            display:block;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        .desktop__menu-image{
+            display: flex;
+            width: 10vw;
+            height: 10vh;
+            background-image: url(./media/html5css3.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .menu-desktop{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-desktop li{
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            list-style: none;
+            margin: 0 2rem;
+            
+        }
+        .menu-desktop a{
+            text-decoration: none;
+            color: black;
+            padding: 1.5rem;
+    
+        }
+        .menu-desktop a:hover{
+            background-color: black;
+            color: #ffffff;
+            text-decoration:underline;
+        }
+        
+        .desktop__menu-icons{
+            display: flex;
+        }
+        .desktop__menu-icons > a{
+            margin: 0rem 0.3rem;
+        }
+    
+        .desktop__menu-icons > a:hover{
+            transition: 0.25s ease-in-out;
+            transform: scale(1.25);    
+        }
+    
+        /*BANNER*/
+    
+        .banner-text{
+            width: 50%;
+        }
+        .banner-text > *{
+            margin: 0.8rem 0rem;
+        }
+    
+        /*CARDS*/
+    
+        .cards__container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    
+        }
+
+        /*PRICING*/
+        
+        .pricing__box-container{
+            flex-direction: row;
+        }
+
+        .pricing-box:hover{
+            transition: 0.3s linear;
+            transform: scale(1.08); 
+        }
+        .pricing-box2:hover{
+            transition: 0.3s linear;
+            transform: scale(1.08); 
+        }
+
+        .pop{
+            left: 35%;
+        }
+        .pricing-box2:hover .pop p{
+            transition: 0.5s ease;
+            transform: rotateY(360deg); 
+        }
+
+}
