@@ -167,25 +167,66 @@ body{
     margin: 0 1rem;
     font-size: 1rem;
 }
+label{
+    height: 1rem;
+    width: 2rem;
+    background-color: gray;
+    position: absolute;
+    top: 0.7rem;
+    left: 18rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition: 0.5s linear ease-in-out;
 
+}
+
+.switch::after{
+    content: '';
+    display: block;
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: rgb(190, 190, 190);
+    border-radius: 50%;
+    margin-left: 0.1rem;
+    margin-top: 0.5px;
+    transition: 0.5s linear ease-in-out;
+
+}
 
 #check-box{
     margin: 0 1rem;
     position: absolute;
     top: 0.7rem;
     left: 16.8rem;
+    display: none;
 
 }
+#check-box:checked + label::after{
+    margin: 0.12rem 1rem;
+    position: absolute;
+    top: 0rem;
+    background-color: rgb(190, 190, 190);
+
+}
+
+#check-box:checked + label{
+    background-color: rgb(1, 182, 25);
+
+}
+
 /*Con este selector selecciono los divs dentro de la clase chess__row*/
-#check-box:checked  +  .chess__container-bg > .chess__rows > div  {
-    transition: 1s ease-out;
-    transform: rotateX(180deg);  
+#check-box:checked  ~  .chess__container-bg > .chess__rows > div  {
+    transition: 0s ease-out;
+    transform: rotateZ(180deg);  
 }
 
 /*Con este selector selecciono el div con la clase chess__container-bg*/
-#check-box:checked  +  div {
+#check-box:checked  ~  div {
     transition: 1s ease-out;
-    transform: rotateX(180deg);  
+    transform: rotateZ(180deg);  
 }
 
 
@@ -195,6 +236,7 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    
 }
 
 
@@ -205,27 +247,44 @@ body{
     width: min-content;
     
 }
-.chess__rows > *{
+
+
+.chess__rows div{
     width: 6vh;
     height: 6vh;
     border: 1px solid #000000;
 
 }
-.white__box{
-    background-color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
-}
-.black__box{
-    background-color: #a8a8a8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5vh;
 
+.chess__container-bg div:nth-child(odd) div:nth-child(odd){
+
+    background-color: #ffffff;
 }
+
+.chess__container-bg div:nth-child(odd) div:nth-child(even){
+
+    background-color: #a8a8a8;
+}
+
+.chess__container-bg div:nth-child(even) div:nth-child(even){
+
+    background-color: #ffffff;
+}
+
+.chess__container-bg div:nth-child(even) div:nth-child(odd){
+
+    background-color: #a8a8a8;
+}
+
+
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+
 
 /* FOOTER */
 
