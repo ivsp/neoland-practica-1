@@ -501,218 +501,80 @@ footer p {
 /*
 CSS PARA LA VERSIÓN TABLET --> robin
 */
+
+
 @media only screen and (min-width: 481px) and (max-width: 1024px){
-
-
-
-
-
-
-}
-
-
-
-/*
-CSS PARA LA VERSIÓN DESKTOP
-*/
-
-@media only screen and (min-width: 1025px) and (max-width: 1440px){
-
-
-    /*HEADER*/
-    .menu__image{
-        display: none;
-
-    }
-    .responsive__menu{
-        display: none;
-    }
-
-    .desktop__menu-nav{
-        display:block;
-    }
-    header{
+    
+    .pricing-box {
+        width: 110%;
+        height: 150px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
+        flex-direction: row;
+        justify-content: space-around;
     }
-    .desktop__menu-image{
+
+    .pricing-box--price {
+        flex-direction: column;
         display: flex;
-        width: 10vw;
-        height: 10vh;
-        background-image: url(./media/html5css3.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .menu-desktop{
-        display: flex;
-        justify-content: space-between;
         align-items: center;
     }
-    .menu-desktop li{
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        list-style: none;
-        margin: 0 2rem;
+
+    .pricing-box--price--sub{
+        bottom:35px;
+        position: relative;
         
     }
-    .menu-desktop a{
-        text-decoration: none;
-        color: black;
-        padding: 1.5rem;
 
+    .pricing-box--price--sub h2{
+        font-weight: lighter;
     }
-    .menu-desktop a:hover{
-        background-color: black;
-        color: #ffffff;
-        text-decoration:underline;
+    .pricing-box sup {
+        position: relative;
+        right: 50px;
     }
-    
-    .desktop__menu-icons{
+
+    .pricing-box2{
+        width: 110%;
+        height: 250px;
         display: flex;
-    }
-    .desktop__menu-icons > a{
-        margin: 0rem 0.3rem;
+       
     }
 
-    .desktop__menu-icons > a:hover{
-        transition: 0.25s ease-in-out;
-        transform: scale(1.25);    
-    }
-
-    /*BANNER*/
-
-    .banner-text{
-        width: 50%;
-    }
-    .banner-text > *{
-        margin: 0.8rem 0rem;
-    }
-
-    /*CARDS*/
-
-    .cards__container{
+    .pricing-box2-container{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .pricing-box2-container sup{
+        position: relative;
+        right: 48px;
+    }
+
+    .pop{
+        position: relative;
+        left: -320px;
+    }
+
+    .pricing-box2-container .pricing__box-check-list{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}    
+
+@media (max-width:700px){
+    .pricing-box{
+        width: 80%;
+    }
+
+    .pricing-box2{
+        width: 80%;
+        height: 350px;
         justify-content: center;
-        align-items: center;
-
     }
-    /*PRICING*/
-   /*
-   INCLUIR LO MISMO QUE EN TABLET --> ROBIN
-   */
 
-
+    .pop{
+        display: none;
+    }
 }
 
-/*CSS PARA LA VERSIÓN DESKTOP-XL*/
-
-@media only screen and (min-width: 1441px){
-
-        /*HEADER*/
-        .menu__image{
-            display: none;
-    
-        }
-        .responsive__menu{
-            display: none;
-        }
-    
-        .desktop__menu-nav{
-            display:block;
-        }
-        header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
-        }
-        .desktop__menu-image{
-            display: flex;
-            width: 10vw;
-            height: 10vh;
-            background-image: url(./media/html5css3.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
-        .menu-desktop{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .menu-desktop li{
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            list-style: none;
-            margin: 0 2rem;
-            
-        }
-        .menu-desktop a{
-            text-decoration: none;
-            color: black;
-            padding: 1.5rem;
-    
-        }
-        .menu-desktop a:hover{
-            background-color: black;
-            color: #ffffff;
-            text-decoration:underline;
-        }
-        
-        .desktop__menu-icons{
-            display: flex;
-        }
-        .desktop__menu-icons > a{
-            margin: 0rem 0.3rem;
-        }
-    
-        .desktop__menu-icons > a:hover{
-            transition: 0.25s ease-in-out;
-            transform: scale(1.25);    
-        }
-    
-        /*BANNER*/
-    
-        .banner-text{
-            width: 50%;
-        }
-        .banner-text > *{
-            margin: 0.8rem 0rem;
-        }
-    
-        /*CARDS*/
-    
-        .cards__container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-    
-        }
-
-        /*PRICING*/
-        
-        .pricing__box-container{
-            flex-direction: row;
-        }
-
-        .pricing-box:hover{
-            transition: 0.3s linear;
-            transform: scale(1.08); 
-        }
-        .pricing-box2:hover{
-            transition: 0.3s linear;
-            transform: scale(1.08); 
-        }
-
-        .pop{
-            left: 35%;
-        }
-        .pricing-box2:hover .pop p{
-            transition: 0.5s ease;
-            transform: rotateY(360deg); 
-        }
-
-}
