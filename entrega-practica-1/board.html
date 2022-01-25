@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style-board.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- ESTE ES EL MENÚ DE NAVEGACIÓN PARA LA VERSIÓN DESKTOP-->
+      <div class="desktop__menu-image"></div>
+      <div class="desktop__menu-nav">
+        <ul class="menu-desktop">
+          <li><a href="index.html">home</a></li>
+          <li><a href="board.html">board</a></li>
+          <li><a href="contacto.html">contact</a></li>
+        </ul>
+      </div>
+      <div class="desktop__menu-icons">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <i class="fa fa-twitter-square"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+      <!-- ESTE ES EL MENÚ DE NAVEGACIÓN PARA LA VERSIÓN MOBILE-->
+
+      <img class="menu__image" src="./media/html5css3.svg" />
+      <div class="responsive__menu">
+        <input type="checkbox" id="resp-menu" />
+        <i class="fa fa-bars"></i>
+        <i class="fa fa-times"></i>
+        <nav class="responsive__menu-items">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="board.html">Board</a></li>
+            <li><a href="contacto.html">Contact</a></li>
+          </ul>
+          <div class="responsive__menu-icons">
+            <div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><i class="fa fa-facebook-square"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://twitter.com/" target="_blank"
+                ><i class="fa fa-twitter-square"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="chess__container">
+        <h1 class="tittle">¿Quieres jugar con las fichas negras?</h1>
+        <input type="checkbox" id="check-box" />
+        <label for="check-box" class="switch"> </label>
+
+        <div class="chess__container-bg">
+          <div class="chess__rows">
+            <div class="box">♜</div>
+            <div class="box">♞</div>
+            <div class="box">♝</div>
+            <div class="box">♛</div>
+            <div class="box">♚</div>
+            <div class="box">♝</div>
+            <div class="box">♞</div>
+            <div class="box">♜</div>
+          </div>
+          <div class="chess__rows">
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+            <div class="box">♟</div>
+          </div>
+          <div class="chess__rows">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="chess__rows">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="chess__rows">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="chess__rows">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="chess__rows">
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+            <div class="box">♙</div>
+          </div>
+          <div class="chess__rows">
+            <div class="box">♖</div>
+            <div class="box">♘</div>
+            <div class="box">♗</div>
+            <div class="box">♕</div>
+            <div class="box">♔</div>
+            <div class="box">♗</div>
+            <div class="box">♘</div>
+            <div class="box">♖</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &copy; mi equipo 2022</p>
+    </footer>
+  </body>
+</html>
