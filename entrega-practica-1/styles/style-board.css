@@ -3,6 +3,7 @@
     src: url('../fuente-oswald/Oswald-Light.ttf') format("truetype");
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +20,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
 }
 
 .desktop__menu-nav{
@@ -39,7 +39,6 @@ header{
     background: #ffffff;
     height: min-content;
     width: 100%;
-    height: 100%;
 
 }
 
@@ -55,9 +54,9 @@ header{
 
 }
 
-.responsive__menu input[type="checkbox"], .responsive__menu .fa-bars, .responsive__menu .fa-times {
+.responsive__menu input[type="checkbox"], .responsive__menu .fa-bars {
     position: absolute;
-    margin: -1.2rem 1rem;
+    margin: -1rem 1rem;
     padding-top: 0;
     right: 0;
     top: 0;
@@ -76,7 +75,7 @@ header{
 }
 
 .responsive__menu .fa-bars, .responsive__menu .fa-times {
-    font-size: 3rem;
+    font-size: 2rem;
     pointer-events: none;
 }
 .responsive__menu input[type="checkbox"] {
@@ -120,7 +119,7 @@ header img {
 
 
 .fa-bars{
-    font-size: 3rem;
+    font-size: 2rem;
     padding-right: 1.5rem;
 }
 .responsive__menu-icons {
@@ -179,7 +178,7 @@ label{
     background-color: gray;
     position: absolute;
     top: 0.7rem;
-    left: 18rem;
+    left: 15rem;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;

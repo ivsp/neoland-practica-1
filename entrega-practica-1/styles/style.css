@@ -54,9 +54,9 @@ header{
 
 }
 
-.responsive__menu input[type="checkbox"], .responsive__menu .fa-bars, .responsive__menu .fa-times {
+.responsive__menu input[type="checkbox"], .responsive__menu .fa-bars {
     position: absolute;
-    margin: -2rem 1rem;
+    margin: -1rem 1rem;
     padding-top: 0;
     right: 0;
     top: 0;
@@ -75,7 +75,7 @@ header{
 }
 
 .responsive__menu .fa-bars, .responsive__menu .fa-times {
-    font-size: 3rem;
+    font-size: 2rem;
     pointer-events: none;
 }
 .responsive__menu input[type="checkbox"] {
@@ -119,7 +119,7 @@ header img {
 
 
 .fa-bars{
-    font-size: 3rem;
+    font-size: 2rem;
     padding-right: 1.5rem;
 }
 .responsive__menu-icons {
@@ -176,13 +176,13 @@ header img {
 }
 
 .banner-text p {
-    font-size: 3.2rem;
+    font-size: 2rem;
     font-weight: bold;
     
 }
 
 .banner-text h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     
 }
 
@@ -527,6 +527,18 @@ CSS PARA LA VERSIÓN TABLET --> robin
 */
 @media only screen and (min-width: 481px) and (max-width: 1024px){
 
+
+    .banner-text p {
+        font-size: 2.5rem;
+        
+    }
+    
+    .banner-text h1 {
+        font-size: 1.2rem;
+        
+    }
+    
+
     /* PRICING*/
 
 .pricing__box-container{
@@ -660,6 +672,17 @@ CSS PARA LA VERSIÓN DESKTOP
     .banner-text > *{
         margin: 0.8rem 0rem;
     }
+
+    .banner-text p {
+        font-size: 3.5rem;
+        
+    }
+    
+    .banner-text h1 {
+        font-size: 1.5rem;
+        
+    }
+    
 
     /*CARDS*/
 
@@ -798,6 +821,16 @@ CSS PARA LA VERSIÓN DESKTOP
         }
         .banner-text > *{
             margin: 0.8rem 0rem;
+        }
+
+        .banner-text p {
+            font-size: 3.5rem;
+            
+        }
+        
+        .banner-text h1 {
+            font-size: 1.5rem;
+            
         }
     
         /*CARDS*/
